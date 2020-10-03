@@ -26,6 +26,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Super Disco Day Scheduler</h1>
       <p class="lead">This is ALLLL you have to do before you're done for the day.</p>
+      <h2 id="currentDay"></h2>
       <p id="currentDay" class="lead"></p>
     </header>
   <!-- These are the time blocks-->
@@ -107,6 +108,8 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous">
+    </script>
+    <script> $("#currentDay").html (new Date)</script>
   </body>
 </html>
