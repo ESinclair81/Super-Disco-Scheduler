@@ -14,10 +14,8 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="Assets/CSS/style.css" />
     <title>Super Disco  Scheduler</title>
   </head>
@@ -25,7 +23,7 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Super Disco Day Scheduler</h1>
-      <p class="lead">This is ALLLL you have to do before you're done for the day.</p>
+      <p class="lead">This is ALLLL you have to do before you're done for the day.</p><br>
       <h2 id="currentDay"></h2>
       <p id="currentDay" class="lead"></p>
     </header>
@@ -35,70 +33,70 @@
         <div class="col-md-1 hour">
           8am
         </div>
-        <textarea class="col-8"></textarea>
+        <textarea class="col-8 description"></textarea>
         <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
         </div>
         <div class="row time-block">
           <div class="col-md-1 hour">
             9am
           </div>
-          <textarea class="col-8"></textarea>
+          <textarea class="col-8 description"></textarea>
           <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
           </div>
         <div class="row time-block">
           <div class="col-md-1 hour">
              10am
            </div>
-           <textarea class="col-8"></textarea>
+           <textarea class="col-8 description"></textarea>
            <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
            </div>
            <div class="row time-block">
             <div class="col-md-1 hour">
               11am
             </div>
-            <textarea class="col-8"></textarea>
+            <textarea class="col-8 description"></textarea>
             <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
             </div>
           <div class="row time-block">
             <div class="col-md-1 hour">
                12pm
              </div>
-             <textarea class="col-8"></textarea>
+             <textarea class="col-8 description"></textarea>
              <button type="button" class="btn btn-primary btn-lg saveBtn"></button> 
              </div>
              <div class="row time-block">
               <div class="col-md-1 hour">
                 1pm
               </div>
-              <textarea class="col-8"></textarea>
+              <textarea class="col-8 description"></textarea>
               <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
               </div>
             <div class="row time-block">
               <div class="col-md-1 hour">
                  2pm
                </div>
-               <textarea class="col-8"></textarea>
+               <textarea class="col-8 description"></textarea>
                <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
                </div>
                <div class="row time-block">
                 <div class="col-md-1 hour">
                  3pm
                 </div>
-                <textarea class="col-8"></textarea>
+                <textarea class="col-8 description"></textarea>
                 <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
                 </div>
               <div class="row time-block">
                 <div class="col-md-1 hour">
                   4pm
                  </div>
-                 <textarea class="col-8"></textarea>
+                 <textarea class="col-8 description"></textarea>
                  <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
               </div>
               <div class="row time-block">
                  <div class="col-md-1 hour">
                    5pm
                  </div>
-                 <textarea class="col-8"></textarea>
+                 <textarea class="col-8 description"></textarea>
                  <button type="button" class="btn btn-primary btn-lg saveBtn"></button>
                  </div>
                 <h1>Go Home!</h1>
@@ -110,6 +108,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous">
     </script>
-    <script> $("#currentDay").html (new Date)</script>
+    <script> $("#currentDay").html("CURRENT DATE IS " + new Date)</script>
   </body>
 </html>
