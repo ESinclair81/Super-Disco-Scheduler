@@ -46,7 +46,7 @@ $(document).ready(function() {
 
  hourUpdater(); 
 
-        var interval = setInterval(hourUpdater, 1000);
+        var interval = setInterval(hourUpdater, 15000);
 
 //load saved descriptions from storage
 
