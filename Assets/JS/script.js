@@ -3,16 +3,16 @@
 $(document).ready(function() {
 
     // Event listener for button click
-    $(saveBtn).on("click", function(){
+    $(".saveBtn").on("click", function() {
      
     //getting values for descriptions
-    var desc = $(this).siblings(".description").val(" ");
+    var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
     
     //saving data in local storage
-    localStorage.setItem(time, desc);
-
-    });
+    localStorage.setItem(time, value);
+      }
+    );
 
     //Function to update desrciption status every hour 
       
@@ -34,7 +34,7 @@ $(document).ready(function() {
             $(this).addClass("present"); 
         }
 
-        else if (blockHour > currentHour) {
+        else {
             $(this).removeClass("past");
             $(this).removeClass("present");
             $(this).addClass("future");
@@ -42,10 +42,6 @@ $(document).ready(function() {
     });
 
 }
-
-
-
-
 
  hourUpdater(); 
 
@@ -67,4 +63,4 @@ $(document).ready(function() {
 //
 $("#currentDay").text(moment().format("dddd, MMMM, Do"));
 
-})
+});
