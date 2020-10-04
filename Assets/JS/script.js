@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     // Event listener for button click
     $(".saveBtn").on("click", function() {
+        console.log("clicked")  
      
     //getting values for descriptions
     var value = $(this).siblings(".description").val();
@@ -45,7 +46,7 @@ $(document).ready(function() {
 
  hourUpdater(); 
 
-        var interval = setInterval(hourUpdater, 15000);
+        var interval = setInterval(hourUpdater, 1000);
 
 //load saved descriptions from storage
 
@@ -60,7 +61,8 @@ $(document).ready(function() {
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
-//
+//Show Date On Page
+
 $("#currentDay").text(moment().format("dddd, MMMM, Do"));
 
 });

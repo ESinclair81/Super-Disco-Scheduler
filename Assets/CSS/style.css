@@ -22,7 +22,7 @@ textarea{
   background-color: lightgray;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid gray;
+  border-bottom: 10px solid #06AED5;;
 }
 
 .description{
@@ -79,6 +79,18 @@ textarea{
 }
 
 h1 {
- 
   text-align: center;
+  color: pink;
+  background-color: #06AED5;
+}
+
+#currentDay {
+  color:pink;
+  text-align: center;
+  border: 10px solid pink;
+  background-color: #06AED5;
+}
+
+p {
+  color: #06AED5;;
 }
