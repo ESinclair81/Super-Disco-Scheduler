@@ -15,7 +15,7 @@ $(document).ready(function() {
       }
     );
 
-    //Function to update desrciption status every hour 
+    //Function to update description status every hour 
       
     function hourUpdater() {
         //Getting the current hours
