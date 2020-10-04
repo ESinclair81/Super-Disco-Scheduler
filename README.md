@@ -8,7 +8,7 @@ This simple to use day scheduler allows users to save input to the site until ed
 
 This is an in-browser tool built using HTML, JavaScript, JQuery and CSS. This site requires an internet connection and working browser.
 
-Go to https://https://esinclair81.github.io/Super-Disco-Scheduler/  to us the Super Disco Scheduler
+Go to https://https://esinclair81.github.io/Super-Disco-Scheduler/  to use the Super Disco Scheduler
 
 
 # Usage
@@ -16,9 +16,12 @@ Go to https://https://esinclair81.github.io/Super-Disco-Scheduler/  to us the Su
 Users can click on the appropriate text box to log as many events for the allotted time as are 
 necessary. To save an event, users click the "SAVE" button delineated with a disk icon. 
 
+¡[Super Disco Scheduler Screenshot #1] (.Assets/Images/super-disco-scheduler-1.png)
+
 Events shall remain saved until edited or the cache/DOM is cleared.
 
-¡[Super Disco Scheduler Screenshot #1] (.Assets/Images/Screenshot- DeCode- JavaScript Quiz.png)
+
+¡[Super Disco Scheduler Screenshot #2] (.Assets/Images/super-disco-scheduler-1.png)
 
 
 
