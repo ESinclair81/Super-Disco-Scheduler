@@ -6,16 +6,17 @@ $(document).ready(function() {
     $(saveBtn).on("click", function(){
      
     //getting values for descriptions
-    var desc = $(this).siblings(".description").val();
+    var desc = $(this).siblings(".description").val(" ");
     var time = $(this).parent().attr("id");
     
     //saving data in local storage
     localStorage.setItem(time, desc);
-    
+
     });
 
     //Function to update desrciption status every hour 
       
+    function hourUpdater() {
         //Getting the current hours
     var currentHour = moment().hours();
 
@@ -39,6 +40,10 @@ $(document).ready(function() {
             $(this).addClass("future");
         }
     });
+
+}
+
+
 
 
 
